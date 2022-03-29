@@ -32,7 +32,7 @@ insert into Supplier(SupplierName, SupplierContactNo) values ('Harvey Norman','0
 
 
 --These statements are used to insert values into the device table.
-insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseYear) values ('Tablet','Apple','Ipad 4th gen',400,'2012-01-01');
+insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseDate) values ('Tablet','Apple','Ipad 4th gen',400,'2012-01-01');
 insert into Devices(DeviceType,DeviceBrand,DeviceName) values ('Tablet','Apple','Ipad Mini');
 insert into Devices(DeviceType,DeviceBrand,DeviceName) values ('Tablet','Microsoft','Surface');
 
@@ -40,13 +40,13 @@ insert into Devices(DeviceType,DeviceBrand,DeviceName) values ('Watch','Apple','
 insert into Devices(DeviceType,DeviceBrand,DeviceName) values ('Watch','Samsung','Samsung Gear');
 insert into Devices(DeviceType,DeviceBrand,DeviceName) values ('Watch','Motorola','Motorola 360');
 
-insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseYear) values ('Laptop','Apple','Macbook Pro',2000,'2020-05-12');
-insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseYear) values ('Laptop','Dell','XPS',2100,null);
-insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseYear) values ('Laptop','Apple','Macbook Air',null,null);
+insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseDate) values ('Laptop','Apple','Macbook Pro',2000,'2020-05-12');
+insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseDate) values ('Laptop','Dell','XPS',2100,null);
+insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseDate) values ('Laptop','Apple','Macbook Air',null,null);
 
-insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseYear) values ('Cable','Apple','Lightning Cable',5,'2020-05-12');
-insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseYear) values ('Cable','Samsung','Type C Cable',5,'2020-05-12');
-insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseYear) values ('Cable','Google','Type C Cable',5,'2020-05-12');
+insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseDate) values ('Cable','Apple','Lightning Cable',5,'2020-05-12');
+insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseDate) values ('Cable','Samsung','Type C Cable',5,'2020-05-12');
+insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseDate) values ('Cable','Google','Type C Cable',5,'2020-05-12');
 
 
 

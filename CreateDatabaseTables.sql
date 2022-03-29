@@ -64,7 +64,7 @@ create table Devices
     --The price of the device which is checked to be a positive int.
     Price smallmoney check(Price > 0), --TODO Changed to can be null
     --The year the product released.
-    ReleaseYear date, --TODO Changed to can be null
+    ReleaseDate date, --TODO Changed to can be null
 )
 
 --CREATE TABLE STOCK

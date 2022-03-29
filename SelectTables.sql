@@ -27,7 +27,7 @@ from Supplier;
 select DeviceID as "Device_ID",
        DeviceType as "Device_Brand",
        DeviceName as "Device_Name",
-       ReleaseYear as "Release_Year",
+       ReleaseDate as "Release_Year",
        Price as "Price"
 from Devices;
 
