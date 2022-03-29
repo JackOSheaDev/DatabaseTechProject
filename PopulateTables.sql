@@ -1,15 +1,11 @@
 use TechShop
 
--- These statements are used to insert values into the customers table.
--- Every purchase will have a customer which is specified by their ID.
--- But not all customers will specify their name and number.
--- This is okay if the value is under 100 euro.
-insert into Customer(CustomerName,CustomerPhone) values (null,null);
-insert into Customer(CustomerName) values ('Robin Williams');
+--These statements are used to insert values into the customer table.
+insert into Customer(CustomerName,CustomerPhone) values ('Robin Williams','0867898745');
 insert into Customer(CustomerName,CustomerPhone) values ('Tim Allen','0867898765');
 insert into Customer(CustomerName,CustomerPhone) values ('Charlie Sheen','0867896265');
 insert into Customer(CustomerName,CustomerPhone) values ('Hugh Laurie','0857898765');
-insert into Customer(CustomerName) values ('Selena Gomez');
+insert into Customer(CustomerName,CustomerPhone) values ('Selena Gomez','0897898765');
 
 
 
@@ -54,23 +50,24 @@ insert into Devices(DeviceType, DeviceBrand, DeviceName, Price, ReleaseYear) val
 
 
 
---Add items in stock.
+--Add items in stock, which are not sold.
 insert into stock(SerialNumber, SupplierID, DeviceID, DateSupplied) values (10000000,1,1,'2020-01-15');
 insert into stock(SerialNumber, SupplierID, DeviceID, DateSupplied) values (10000001,2,4,'2020-01-15');
 insert into stock(SerialNumber, SupplierID, DeviceID, DateSupplied) values (10000002,2,7,'2020-01-15');
 insert into stock(SerialNumber, SupplierID, DeviceID, DateSupplied) values (10000003,2,10,'2020-01-15');
 insert into stock(SerialNumber, SupplierID, DeviceID, DateSupplied) values (10000004,2,8,'2020-01-15');
+insert into stock(SerialNumber, SupplierID, DeviceID, DateSupplied) values (10000005,3,6,'2020-01-15');
+insert into stock(SerialNumber, SupplierID, DeviceID, DateSupplied) values (10000006,5,4,'2020-01-15');
+insert into stock(SerialNumber, SupplierID, DeviceID, DateSupplied) values (10000007,5,12,'2020-01-15');
 
 
---Does not work because price is greater than 100
---insert into SellsItem(StaffID, CustomerID, DateOfTransaction, SerialNumber) values (1,1,'2021-02-15',10000004);
-
---Works because customer entry isnt null
-insert into SellsItem(StaffID, CustomerID, DateOfTransaction, SerialNumber) values (1,3,'2021-02-15',10000004);
---Does work because price less than 100
-insert into SellsItem(StaffID, CustomerID, DateOfTransaction, SerialNumber) values (1,1,'2021-02-15',10000003);
-insert into SellsItem(StaffID, CustomerID, DateOfTransaction, SerialNumber) values (2,4,'2021-02-15',10000001);
-insert into SellsItem(StaffID, CustomerID, DateOfTransaction, SerialNumber) values (3,5,'2021-02-15',10000002);
-
-
+--Add items to stock which are sold
+insert into stock values (10000008,1,8,'2020-01-15',1,1,GETDATE());
+insert into stock values (10000009,6,8,'2020-01-15',1,2,GETDATE());
+insert into stock values (10000010,8,8,'2020-01-15',1,4,GETDATE());
+insert into stock values (10000013,4,6,'2020-01-15',3,2,GETDATE());
+insert into stock values (10000014,2,4,'2020-01-15',3,1,GETDATE());
+insert into stock values (10000015,2,12,'2020-01-15',3,3,GETDATE());
+insert into stock values (10000011,4,10,'2020-01-15',4,1,GETDATE());
+insert into stock values (10000012,4,8,'2020-01-15',4,3,GETDATE());
 
